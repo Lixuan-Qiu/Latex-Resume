@@ -1,6 +1,7 @@
 # Latex-Resume
 
-This repository includes both my English and Chinese resume, while also some good latex templates I found on [Overleaf.com](overleaf.com) and Github
+This repository includes both my English and Chinese resume, while also some good latex templates I found on [Overleaf.com](overleaf.com) and Github  
+
 More information can be found in each individual .readme
 
 ## English Resume
