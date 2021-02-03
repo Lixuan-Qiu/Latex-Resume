@@ -1,0 +1,107 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Original Author: Tao Jiang
+%% Link: https://github.com/hijiangtao/resume
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{邱立轩}
+
+\contactInfo{(+86) 132-6150-1580}{}{vincentqiu1998@outlook.com}{vincentqiu1998@outlook.com}{https://www.linkedin.com/in/lixuanqiu-2020/}{lixuanqiu-2020}
+
+% \section{个人总结}
+% 本人在校成绩优秀、乐观向上，工作负责、自我驱动力强、热爱尝试新事物，认同开放、连接、共享的Web在未来的不可替代性。在校期间长期从事可视分析(Web的2D/3D时空可视化)相关研究，对Web技术发展趋势及前端工程化解决方案有浓厚兴趣。\textbf{现任职于阿里巴巴集团。}
+\vspace{-6pt}
+
+% \section{\faGraduationCap\ 教育背景}
+\section{教育背景}
+\datedsubsection{\textbf{美国南加州大学}}{洛杉矶，美国}
+{理学硕士 \textit{计算机科学} \hfill 2020.08 - 2021.12 (预计)}\\
+\ \textbf{GPA: 3.5/4.0} \\
+{\footnotesize \textbf{相关课程: }算法分析，人工智能，Web技术，多媒体系统设计，电脑网络结构}
+
+\datedsubsection{\textbf{美国里海大学}}{伯利恒，美国}
+{理学学士 \textit{计算机科学} \hfill 2016.08 - 2020.05}\\
+\ \textbf{GPA: 3.6/4.0} \\
+{\footnotesize \textbf{辅修: }数据科学，日语} \\
+{\footnotesize \textbf{相关课程: }机器人技术，数据挖掘，前端开发，应用统计学}
+\vspace{-3pt}
+
+% \section{\faCogs\ IT 技能}
+\section{技术能力}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.2ex]
+  \item \textbf{编程语言}: Java, JavaScript, HTML/CSS, Python, SQL, C++
+  \item \textbf{相关工具}: Git, Unix, Maven, Elasticsearch, MongoDB, RESTful API, Node.js 
+\end{itemize}
+
+% \end{itemize}
+\vspace{-6pt}
+
+\section{科研经历}
+\datedsubsection{\textbf{数据库搜索引擎}}{2019.05-2020.08}
+\begin{itemize}
+  \item 主笔并发表题目为\href{http://ceur-ws.org/Vol-2722/profiles2020-paper-2.pdf}{ \textit{An Architecture for Cell-Centric Indexing of Datasets }}的论文
+  \item 在开源搜索引擎ElasticSearch上实现Cell Centric Index为用户提供简单易用的数据集搜索解决方式，且用户在搜索前无需了解各种数 据库的内在结构 ，也无需拥有数据相关知识
+  \item 建立拥有线性时间复杂度和水平扩展性的数据索引系统和查询执行系统
+  \item 分析Java垃圾回收日志并更改垃圾回收器以提升对检索的实验效率
+  \item 设计用户行为预测模型来获得拟真检索项以模仿用户检索并测试其效率
+\end{itemize}
+\vspace{-10pt}
+
+\section{项目经历}
+\datedsubsection{\textbf{人工智能}}{2020.09-2020.11}
+\begin{itemize}
+  \item 分别使用宽度优先搜索(BFS)、等代价搜索(UCS)和A*搜索解决三维迷宫问题
+  \item 利用Minimax算法和Alpha Beta剪枝设计围棋智能，与使用Q Learning的围棋程序对抗取得0.9胜率
+  \item 为MNIST数据开发深度神经网络，其中未使用任何机器学习库函数；在五分钟内完成训练并达到0.93准确率
+\end{itemize}
+\vspace{-10pt}
+\datedsubsection{\textbf{Swap: 二手交易平台}}{2019.01-2019.12}
+\begin{itemize}
+  \item 借助REST API、Spring Boot Framework和Vue.js来开发Web前端和后端
+  \item 使用 AWS 服务建立 PostgreSQL 服务器，利用JDBC连接前后端并检索数据
+  \item 充分利用快速成型技术(Rapid Prototyping)去设计，改进，测试，并最终在较短时间内完成整个项目
+  \item 基于 Elasticsearch 搜索引擎的搜索 接口 实现对各个商品的过滤，排序，和全文本检索功能
+\end{itemize}
+\vspace{-8pt}
+\datedsubsection{\textbf{WeGame: 电竞社交网络}}{2019.11-2019.12}
+\begin{itemize}
+  \item 为电竞爱好者设计一个社区以方便他们创建若干房间一起讨论和研究喜欢的游戏
+  \item 用 React.js 创造一个即时回应的用户界面，用MongoDB和Mongoose 实现前端和服务器的实时连接
+\end{itemize}
+\vspace{-8pt}
+\datedsubsection{\textbf{可移动型机器人}}{2019.01-2019.05}
+\begin{itemize}
+  \item 基于Color Segmentation和Mahalanobis Distance编写物件追踪算法
+  \item 利用Sick Lidar和PID控制器设计路径跟踪的实时反馈技术
+\end{itemize}
+\vspace{-8pt}
+\datedsubsection{\textbf{The Buzz: 里海贴吧}}{2018.09-2018.12}
+\begin{itemize}
+  \item 组织一只五人团队来为里海大学开发一个基于网站和安卓的社交网络平台
+  \item 利用 Heroku 云服务和 Apache Maven 来 开发无状态的 PostgreSQL 服务器
+  \item 使用 TypeScript, jQuery和Bootstrap创造了具有 RESTful 特征的即时回应的网络前端
+  \item 基于 借助 Trello Board 和 Bitbucket 等版本控制工具来 优化项目管理
+\end{itemize}
+
+\section{刊物}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.2ex]
+  \item Qiu, Lixuan, et al. "An Architecture for Cell-Centric Indexing of Datasets." International Workshop on Profiling and Searching Data on the Web (PROFILES 2020), ISWC. 2020.
+\end{itemize}
+
+\end{document}

@@ -1,0 +1,208 @@
+%------------------------
+% Resume Template
+% Original Author : Anubhav Singh
+% Original Github : https://github.com/xprilion
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-3pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {#1\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & {#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\projectEntry}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & {#2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\Huge Lixuan Qiu}} \vspace{+10pt}\\
+  
+  \href{mailto:vincentqiu1998@outlook.com}{Email: vincentqiu1998@outlook.com} & Mobile: +1-484-747-2061\\
+  \href{https://www.linkedin.com/in/lixuanqiu-2020/}{Linkedin: lixuanqiu-2020} & 
+  3183 Wilshire Blvd, Los Angeles, CA 90010, USA\\
+%   \href{https://github.com/xprilion}{Github: ~~github.com/xprilion} \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Southern California}{Los Angeles, CA}
+      {Master of Science - Computer Science}{Aug 2020 - Present}
+      {\scriptsize  \footnotesize{\newline{} \textbf{GPA:} 3.50/4.00}}
+      {\scriptsize  \footnotesize{\newline{}\textbf{Courses:} Artificial Intelligence, Algorithm Analysis, Web Technology, Multimedia System Design, Computer Networks}}
+
+    \resumeSubheading
+      {Lehigh University}{Bethlehem, PA}
+      {Bachelor of Science - Computer Science}{Aug 2016 - May 2020}
+      {\scriptsize \footnotesize{\newline{}
+      \textbf{GPA:} 3.60/4.00}}
+      {\scriptsize  \footnotesize{\newline{}
+      \textbf{Minors:} Data Science, Japanese}}
+      {\scriptsize  \footnotesize{\newline{}
+      \textbf{Courses:} Mobile Robotics, Front-end Development, Data Mining, Applied Statistics }}
+    \resumeSubHeadingListEnd
+    
+%-----------SKILLS-----------------
+\section{Skills Summary}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Programming Languages}{~~Java, Python, C++, JavaScript, SQL, HTML/CSS}
+	\resumeSubItem{Frameworks \& Tools}{~~~~~~~~Git, Unix, Maven, Elasticsearch, MongoDB, RESTful API, Node.js}
+	\vspace{+5pt}
+% 	\newline
+\resumeSubHeadingListEnd
+
+
+%-----------RESEARCH-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading{Domain-Agnostic Dataset Search}{Bethlehem, PA}
+    {Student Researcher}{May 2019 - Aug 2020}
+    \resumeItemListStart
+        \resumeItem{Impact}
+          {Authored and published paper \href{http://ceur-ws.org/Vol-2722/profiles2020-paper-2.pdf}{\textit{“An Architecture for Cell-Centric Indexing of Datasets”}} }
+          \resumeItem{Cell-Centric Indexing}
+          {Effectuated novel Cell-Centric Index on Elasticsearch to provide user-centered solution for dataset search, which allows users to query data without having to know the pre-existing structure of each table}
+          \resumeItem{Scalable System}{Constructed data indexing and query execution system with linear time complexity and horizontal scalability}
+          \resumeItem{Testing} 
+          {Invented user behavior intent model to simulate real-world testing condition}
+          \resumeItem{Garbage Collection}
+          {Improved test efficiency by analyzing Java garbage collection log and changing garbage collector}
+          	\vspace{+3pt}
+
+      \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+    \projectEntry{Artificial Intelligence}{Sep 2020 - Nov 2020}
+    \resumeItemListStart
+        \resumeItemWithoutTitle
+        {Designed bot for GO game via Minimax that was able to achieve a win rate of 0.9 against Q-Learning agent}
+        \resumeItemWithoutTitle
+        {Developed Deep Neural Network for MNIST dataset without using any machine learning library; the neural network can be trained in 5 minutes and gain 0.92 accuracy}
+        \resumeItemWithoutTitle
+        {Created 3D Maze solver using Breadth-First Search, Uniform Cost Search, and A* search,}
+      \resumeItemListEnd
+      
+    \projectEntry{Swap: Lehigh Marketplace}{Jan 2019 - Dec 2019}
+    \resumeItemListStart
+        \resumeItemWithoutTitle 
+        {Implemented PostgreSQL database on Heroku and enabled data mapping and query execution via Hibernate}
+        \resumeItemWithoutTitle
+        {Employed Vue.js to facilitate aesthetic and responsive web design and utilized Spring Boot to integrate front-end and back-end into RESTful web service}
+        \resumeItemWithoutTitle
+        {Applied Rapid Prototyping to design, improve, test, and eventually deliver “Swap” in reduced time frame}
+        \resumeItemWithoutTitle
+        {Adopted Elasticsearch search API to realize filtering and sorting by attribute and full-text searching}
+      \resumeItemListEnd
+      
+    \projectEntry{WeGame: Gamer Social Network}{Nov 2019 - Dec 2019}
+    \resumeItemListStart
+        \resumeItemWithoutTitle 
+        {Designed community for gamers to create lobby to together discuss and play favored games}
+        \resumeItemWithoutTitle
+        {Developed responsive user interface using React.js and established live database connection by MongoDB}
+      \resumeItemListEnd
+      
+    \projectEntry{Mobile Robotics}{Jan 2019 - May 2019}
+    \resumeItemListStart
+        \resumeItemWithoutTitle 
+        {Programmed real time object tracker using color segmentation by Mahalanobis Distance}
+        \resumeItemWithoutTitle
+        {Devised real-time feedback control for path following with SICK LIDAR and proportional-derivative controller}
+      \resumeItemListEnd
+      
+    \projectEntry{The Buzz: Lehigh Reddit}{Aug 2018 - Dec 2018}
+    \resumeItemListStart
+        \resumeItemWithoutTitle 
+        {Coordinated team of five people to design and build social media platform for web and Android}
+        \resumeItemWithoutTitle
+        {Established stateless PostgreSQL server hosted by Heroku via Apache Maven}
+        \resumeItemWithoutTitle
+        {Created RESTful responsive web front-end by TypeScript, jQuery, and Bootstrap}
+        \resumeItemWithoutTitle
+        {Exploited version control tools such as Trello Board and Bitbucket for project management}
+        	\vspace{+3pt}
+
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Publications}
+\resumeSubHeadingListStart
+\resumeSubItem{Paper}{Qiu, Lixuan, et al. "An Architecture for Cell-Centric Indexing of Datasets." International Workshop on Profiling and Searching Data on the Web (PROFILES 2020), ISWC. 2020.}
+\resumeSubHeadingListEnd
+\end{document}
